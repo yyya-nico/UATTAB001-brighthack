@@ -21,7 +21,7 @@ elif [[ ${BRIGHTNESS} == 98 ]]; then
 
 elif [[ ${BRIGHTNESS} == 106 ]]; then
 
-  echo 80 > ${BRIGHTNESS_FILE}
+  echo 60 > ${BRIGHTNESS_FILE}
 
 fi
 
