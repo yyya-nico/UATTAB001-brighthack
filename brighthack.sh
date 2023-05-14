@@ -5,23 +5,26 @@
 # be made more robust. Currently un-tested 
 # on Oxygen OS.
 
-BRIGHTNESS_FILE=/sys/class/backlight/panel0-backlight/brightness
+BRIGHTNESS_FILE=/sys/class/leds/lcd-backlight/brightness
 
 BRIGHTNESS=$(cat ${BRIGHTNESS_FILE})
 
 #echo $BRIGHTNESS
 
-if [[ ${BRIGHTNESS} == 4 ]]; then
+if [[ ${BRIGHTNESS} == 90 ]]; then
 
-  echo 1 > ${BRIGHTNESS_FILE}
+  echo 3 > ${BRIGHTNESS_FILE}
 
-elif [[ ${BRIGHTNESS} == 8 ]]; then
+# fukiame - i only need the minimum brightness lol
+#   also this should scale linearly, not in set marks like this
 
-  echo 2 > ${BRIGHTNESS_FILE}
-
-elif [[ ${BRIGHTNESS} == 12 ]]; then
-
-  echo 5 > ${BRIGHTNESS_FILE}
+#elif [[ ${BRIGHTNESS} == 8 ]]; then
+#
+#  echo 2 > ${BRIGHTNESS_FILE}
+#
+#elif [[ ${BRIGHTNESS} == 12 ]]; then
+#
+#  echo 5 > ${BRIGHTNESS_FILE}
 
 fi
 
