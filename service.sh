@@ -5,12 +5,6 @@
 # This will make sure your module will work
 # if Magisk changes it's mount point in the future
 
-
-# Set PATH to where busybox may be from most to
-# least likely
-
-PATH=/sbin/.magisk/busybox:/sbin/.core/busybox:/system/xbin:/sbin:/system/bin
-
 MODDIR=${0%/*}
 
 BRIGHTNESS_FILE=/sys/class/backlight/panel0-backlight/brightness
