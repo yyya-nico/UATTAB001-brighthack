@@ -15,16 +15,13 @@ if [[ ${BRIGHTNESS} == 90 ]]; then
 
   echo 3 > ${BRIGHTNESS_FILE}
 
-# fukiame - i only need the minimum brightness lol
-#   also this should scale linearly, not in set marks like this
+elif [[ ${BRIGHTNESS} == 98 ]]; then
 
-#elif [[ ${BRIGHTNESS} == 8 ]]; then
-#
-#  echo 2 > ${BRIGHTNESS_FILE}
-#
-#elif [[ ${BRIGHTNESS} == 12 ]]; then
-#
-#  echo 5 > ${BRIGHTNESS_FILE}
+  echo 30 > ${BRIGHTNESS_FILE}
+
+elif [[ ${BRIGHTNESS} == 106 ]]; then
+
+  echo 80 > ${BRIGHTNESS_FILE}
 
 fi
 
