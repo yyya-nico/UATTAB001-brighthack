@@ -7,7 +7,7 @@
 
 MODDIR=${0%/*}
 
-BRIGHTNESS_FILE=/sys/class/leds/lcd-backlight/brightness
+BRIGHTNESS_FILE=/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 
 BRIGHTHACK_EXEC=${MODDIR}/brighthack.sh
 
